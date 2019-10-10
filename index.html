@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My coursera project 1.</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <style>
+    *{ padding:0;margin:0; font-family: sans-serif,"Avanir Next";
+     box-sizing: border-box;}
+     .container{padding:10px;}
+     .box1,.box2,.box3{border:2px solid black; position: relative;background-color: grey;}
+     
+     
+	 .chicken{position: absolute;background-color: pink;   border:1px solid black;
+    padding:5px 8px; text-align: center;top:0;right:0; width:25%;}
+      .beef{position: absolute;background-color:#cc0000;color:#fff;border: 1px solid black;
+    padding:5px 10px; text-align: center;top:0; right:0; width: 25% }
+	   .sushi{position: absolute;background-color:#ffff80; border:1px solid black;
+    padding:5px 10px; text-align:center;top:0; right:0; width: 25% }
+   .content p{
+      padding:40px 10px 0 10px; 
+    }
+    h1{text-align: center; padding-top:40px; padding-bottom: 50px; font-size:50px; }
+    @media(min-width:992px) {
+    	.box1,.box2,.box3{
+    		width:31%;
+    		float:left;
+        margin-right: 15px;
+      }
+    }
+    @media (min-width:768px) and (max-width:991px) {
+    	h1{font-size: 40px;}
+      .box1,.box2{width:48%;margin-right: 15px;float:left;}
+      .box3 {width:98%;margin-top:160px; }
+   }
+    @media(max-width:767px){
+      h1{font-size:30px;}
+
+    	.box1 ,.box2 ,.box3 {
+        width:100%;
+    		padding-left:7px;
+        padding-right: 7px;
+    		margin-top:10px;
+    		margin-bottom: 10px;
+    	}
+    }
+  </style>
+</head>
+<body><h1>Our Menu</h1>
+<div class="container">
+	<div class="box1" >
+		<h3 class="chicken">Chicken</h3>
+	  <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+	</div>
+	<div class="box2">
+		<h3 class="beef">Beef</h3>
+		<div class="content">
+		 <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		</div>
+    </div>
+    
+    <div class="box3">
+    	<div id="second-row">
+    	  <h3 class="sushi">Sushi</h3>
+    	  <div class="content">
+    		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+       </div>
+    </div>
+</div>
+  
+
+
+</body>
+</html>
